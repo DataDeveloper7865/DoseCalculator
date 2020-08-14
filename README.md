@@ -1,3 +1,6 @@
+This project is a configuration calculator based on doses and formulation parameters.
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
