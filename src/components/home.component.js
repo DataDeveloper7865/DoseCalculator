@@ -19,6 +19,7 @@ class Home extends Component {
             <li> Deployed On: Google App Engine</li>
             <li> Continuous Integration / Deployment Pipeline: Google CI \ CD</li>
             <li> Source Control: Github </li>
+            <li> This change was added from cloud build triggers</li>
         </div>
         );
     }
