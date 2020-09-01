@@ -14,8 +14,9 @@ import Weightdose from './components/weight-based.component.js';
 import Home from './components/home.component.js';
 
 import Excipientexposure from './components/excipient-exposure.component.js';
-import Minimumps20 from './components/minimum-ps20.component.js'
-import RelevantAAPH from './components/relevant-aaph.component.js'
+import Minimumps20 from './components/minimum-ps20.component.js';
+import RelevantAAPH from './components/relevant-aaph.component.js';
+import FormFun from './components/FormFun.component.js';
 
 
 const { Header, Sider, Content } = Layout;
@@ -66,6 +67,10 @@ class App extends React.Component {
                 Relevant AAPH
                 <Link to='/relevant-aaph' />
               </Menu.Item>
+              <Menu.Item key="8" icon={<UploadOutlined />}>
+                Form Fun
+                <Link to='/form-fun' />
+              </Menu.Item>
             </Menu>
           </Sider>
           <Layout className="site-layout">
@@ -91,6 +96,7 @@ class App extends React.Component {
               <Route path='/excipient-exposure' component={Excipientexposure} />
               <Route path='/minimum-ps20' component={Minimumps20} />
               <Route path='/relevant-aaph' component={RelevantAAPH} />
+              <Route path='/form-fun' component={FormFun} />
             </Content>
           </Layout>
         </Layout>

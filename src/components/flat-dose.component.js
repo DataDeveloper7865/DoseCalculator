@@ -7,20 +7,41 @@ const Plot = createPlotlyComponent(Plotly);
 
 const word1 = "hello";
 
-function calculateDose() {
-    console.log(`hello world from button ${word1}`);
-}
+// function calculateDose() {
+//     console.log(`hello world from button ${word1}`);
+// }
 
 class Flatdose extends Component {
-    constructor() {
-        super()
+    constructor(props) {
+        super(props);
+        this.calculateDose = this.calculateDose.bind(this);
         this.state = {
-            dose: "dose",
-            volume: "volume",
-            dpConc: "dpConc",
-            ps20Conc: "ps20Conc",
-            sucroseConc: "sucroseConc"
-        }
+            dose: "",
+            volume: "",
+            dpConc: "",
+            ps20Conc: "",
+            sucroseConc: ""
+        };
+    }
+
+    // calculateDose() {
+    //     console.log(`
+    //     Dose is: ${this.state.dose}
+    //     Volume is: ${this.state.dose}
+    //     DP Concentration is: ${this.state.dose}
+    //     PS20 Concentration is: ${this.state.dose}
+    //     Sucrose Concentration is: ${this.state.dose}
+    //     `);
+    // }
+
+    calculateDose() {
+        this.setState({
+            dose: "dosefromCalcDose",
+            volume: "dosefromCalcDose",
+            dpConc: "dosefromCalcDose",
+            ps20Conc: "dosefromCalcDose",
+            sucroseConc: "dosefromCalcDose"
+        });
     }
 
 
@@ -41,7 +62,7 @@ class Flatdose extends Component {
                     <Input addonBefore = "Input Sucrose Conc Here" placeholder="[Sucrose]"/>
                 </div>
                 <div id="input-element">
-                    <Button onClick = {calculateDose} type="primary"> Calculate! </Button>
+                    <Button onClick = {this.calculateDose} type="primary"> Calculate! </Button>
                 </div>
                     <h1> The total amount of drug dosed is (in mg): {this.state.dose} </h1>
                     <h1> The total amount of volume dosed is (in mL): {this.state.dpConc} </h1>
