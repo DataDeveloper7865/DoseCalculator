@@ -12,6 +12,13 @@ class Home extends Component {
                 <li>Flat Dosing</li>
                 <li>Step-Dosing</li>
             </ul>
+            <h1> Technology Used:</h1>
+            <li> React For General Front-End Development</li>
+            <li> Graphs: Plotly library</li>
+            <li> Tables: Handson Table</li>
+            <li> Deployed On: Google App Engine</li>
+            <li> Continuous Integration / Deployment Pipeline: Google CI \ CD</li>
+            <li> Source Control: Github </li>
         </div>
         );
     }
